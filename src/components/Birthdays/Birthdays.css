@@ -1,0 +1,147 @@
+
+.birthdays-section {
+  padding: 65px 7%;
+  background: #ffffff;
+}
+
+.birthdays-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.birthdays-heading {
+  max-width: 650px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.birthdays-heading > span {
+  color: #b58a2a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.birthdays-heading h2 {
+  color: #061b3b;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(28px, 4vw, 38px);
+  margin: 10px 0;
+}
+
+.birthdays-heading p {
+  color: #68758a;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.birthdays-divider {
+  width: 50px;
+  height: 3px;
+  margin: 16px auto 0;
+  background: #d6ad52;
+  border-radius: 5px;
+}
+
+.birthdays-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.birthday-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f7f8fb;
+  border: 1px solid #e8ebf0;
+  border-left: 3px solid #d6ad52;
+  border-radius: 9px;
+  box-shadow: 0 4px 12px rgba(6, 27, 59, 0.04);
+}
+
+.birthday-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b58a2a;
+  background: #fbf1d9;
+  border-radius: 50%;
+}
+
+.birthday-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.birthday-info h3 {
+  color: #061b3b;
+  font-size: 13px;
+  margin: 0 0 7px;
+}
+
+.birthday-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #68758a;
+  font-size: 10px;
+}
+
+.birthday-date svg {
+  color: #b58a2a;
+}
+
+.birthday-gift {
+  flex-shrink: 0;
+  color: #d6ad52;
+}
+
+.birthday-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 16px;
+  background: #f7f8fb;
+  border-radius: 8px;
+  color: #061b3b;
+  text-align: center;
+}
+
+.birthday-message svg {
+  flex-shrink: 0;
+  color: #b58a2a;
+}
+
+.birthday-message p {
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .birthdays-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .birthdays-section {
+    padding: 50px 6%;
+  }
+
+  .birthdays-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .birthday-card {
+    padding: 13px;
+  }
+}

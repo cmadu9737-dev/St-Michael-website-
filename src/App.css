@@ -1,0 +1,105 @@
+/* =================================
+   APP GLOBAL LAYOUT
+================================= */
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* =================================
+   WEBSITE CONTAINER
+================================= */
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* =================================
+   SECTION STYLING
+================================= */
+
+.section {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #102c50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 1.7;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #102c50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #d6a52a;
+  color: #102c50;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-title {
+    font-size: 23px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+}

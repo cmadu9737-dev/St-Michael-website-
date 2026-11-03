@@ -1,0 +1,260 @@
+
+/* =====================================
+   CYON LOGIN PAGE
+===================================== */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* LEFT IMAGE SECTION */
+
+.login-image {
+  width: 50%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #123c27;
+}
+
+.login-image > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.login-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 45, 22, 0.85)
+  );
+}
+
+.login-image-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 12%;
+  left: 10%;
+  right: 10%;
+  color: white;
+}
+
+.login-image-content h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.login-image-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 450px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* RIGHT FORM SECTION */
+
+.login-form-section {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 30px;
+  background: #ffffff;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 430px;
+}
+
+.login-logo {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.login-small-title {
+  display: inline-block;
+  color: #b28a36;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.login-form-container h2 {
+  font-size: 34px;
+  color: #16452c;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.login-description {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+/* FORM */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-size: 14px;
+  font-weight: 650;
+  color: #333;
+  margin-bottom: 9px;
+}
+
+.login-form input {
+  width: 100%;
+  height: 52px;
+  padding: 0 15px;
+  margin-bottom: 23px;
+  border: 1px solid #dce3dd;
+  border-radius: 8px;
+  background: #fafcfb;
+  color: #222;
+  font-size: 14px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.login-form input:focus {
+  border-color: #176b3a;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(23, 107, 58, 0.1);
+}
+
+.login-form input::placeholder {
+  color: #aaa;
+}
+
+/* SIGN IN BUTTON */
+
+.login-button {
+  width: 100%;
+  height: 53px;
+  border: none;
+  border-radius: 8px;
+  background: #176b3a;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-top: 5px;
+}
+
+.login-button:hover {
+  background: #104d29;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(23, 107, 58, 0.2);
+}
+
+/* MESSAGE */
+
+.login-message {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 7px;
+  background: #edf7ef;
+  color: #176b3a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* FOOTER LINKS */
+
+.login-switch {
+  margin-top: 27px;
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-switch a {
+  color: #176b3a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-switch a:hover {
+  text-decoration: underline;
+}
+
+.login-back-home {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  color: #777;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.login-back-home:hover {
+  color: #176b3a;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+  .login-image {
+    width: 42%;
+  }
+
+  .login-form-section {
+    width: 58%;
+  }
+
+  .login-image-content h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-page {
+    display: block;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 22px;
+  }
+
+  .login-form-container {
+    max-width: 450px;
+  }
+
+  .login-form-container h2 {
+    font-size: 29px;
+  }
+
+  .login-logo {
+    width: 75px;
+    height: 75px;
+  }
+}

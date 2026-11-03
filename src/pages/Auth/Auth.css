@@ -1,0 +1,288 @@
+
+/* =====================================
+   CYON REGISTRATION PAGE
+===================================== */
+
+.register-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* LEFT IMAGE */
+
+.register-image {
+  width: 43%;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #123c27;
+}
+
+.register-image > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 45, 22, 0.88)
+  );
+}
+
+.register-image-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 12%;
+  left: 9%;
+  right: 9%;
+  color: #fff;
+}
+
+.register-image-tag {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #e6c477;
+  line-height: 1.8;
+}
+
+.register-image-content h1 {
+  font-size: clamp(30px, 3.5vw, 44px);
+  line-height: 1.2;
+  margin: 16px 0;
+  font-weight: 800;
+}
+
+.register-image-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* FORM SECTION */
+
+.register-form-section {
+  width: 57%;
+  min-height: 100vh;
+  padding: 45px 35px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.register-form-container {
+  width: 100%;
+  max-width: 470px;
+}
+
+.register-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+.register-small-title {
+  display: block;
+  color: #b28a36;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.register-form-container h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #16452c;
+  margin: 0 0 10px;
+}
+
+.register-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+/* REGISTRATION FORM */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  color: #333;
+  font-size: 13px;
+  font-weight: 650;
+  margin-bottom: 8px;
+}
+
+.register-form input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #dce3dd;
+  border-radius: 8px;
+  background: #fafcfb;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 17px;
+  transition: 0.25s ease;
+}
+
+.register-form input:focus {
+  border-color: #176b3a;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(23, 107, 58, 0.1);
+}
+
+.register-form input::placeholder {
+  color: #aaa;
+}
+
+/* SUBGROUP PREVIEW */
+
+.register-subgroup-preview {
+  background: #edf7ef;
+  border-left: 4px solid #176b3a;
+  border-radius: 7px;
+  padding: 14px;
+  margin: 0 0 18px;
+}
+
+.register-subgroup-preview span {
+  display: block;
+  color: #777;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.register-subgroup-preview strong {
+  color: #176b3a;
+  font-size: 15px;
+}
+
+/* BUTTON */
+
+.register-button {
+  width: 100%;
+  height: 52px;
+  background: #176b3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.25s ease;
+}
+
+.register-button:hover {
+  background: #104d29;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(23, 107, 58, 0.2);
+}
+
+/* MESSAGE */
+
+.register-message {
+  background: #edf7ef;
+  color: #176b3a;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 17px;
+}
+
+/* LINKS */
+
+.register-switch {
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.register-switch a {
+  color: #176b3a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-switch a:hover {
+  text-decoration: underline;
+}
+
+.register-back-home {
+  display: block;
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 18px;
+}
+
+.register-back-home:hover {
+  color: #176b3a;
+}
+
+.register-footer {
+  text-align: center;
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .register-image {
+    width: 38%;
+  }
+
+  .register-form-section {
+    width: 62%;
+  }
+
+  .register-image-content h1 {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 650px) {
+  .register-page {
+    display: block;
+  }
+
+  .register-image {
+    display: none;
+  }
+
+  .register-form-section {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .register-form-container h2 {
+    font-size: 27px;
+  }
+}

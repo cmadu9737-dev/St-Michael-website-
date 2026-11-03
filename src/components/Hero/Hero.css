@@ -1,0 +1,180 @@
+
+.hero-section {
+  min-height: 550px;
+  background-image: url('../../assets/St.\ Michael.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  min-height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 17, 42, 0.88) 0%,
+    rgba(3, 17, 42, 0.68) 55%,
+    rgba(3, 17, 42, 0.25) 100%
+  );
+  padding: 55px 8%;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-label {
+  display: inline-block;
+  color: #f2c14e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero-content h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.12;
+  margin: 0;
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  color: #f2c14e;
+}
+
+.hero-divider {
+  width: 75px;
+  height: 4px;
+  background: #f2c14e;
+  margin: 22px 0;
+  border-radius: 5px;
+}
+
+.hero-welcome {
+  font-size: 19px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #e0e7f0;
+  max-width: 570px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.hero-primary-button {
+  background: #f2c14e;
+  color: #061b3b;
+}
+
+.hero-primary-button:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+.hero-secondary-button {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.hero-secondary-button:hover {
+  background: #ffffff;
+  color: #061b3b;
+}
+
+.hero-location {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #e0e7f0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero-section,
+  .hero-overlay {
+    min-height: 500px;
+  }
+
+  .hero-section {
+    background-position: center top;
+  }
+
+  .hero-overlay {
+    padding: 45px 6%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-section,
+  .hero-overlay {
+    min-height: 520px;
+  }
+
+  .hero-section {
+    background-position: center top;
+  }
+
+  .hero-overlay {
+    padding: 40px 6%;
+    background: rgba(3, 17, 42, 0.72);
+  }
+
+  .hero-label {
+    font-size: 11px;
+    letter-spacing: 1.3px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-welcome {
+    font-size: 16px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-primary-button,
+  .hero-secondary-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

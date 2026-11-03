@@ -1,0 +1,146 @@
+
+.announcements-section {
+  padding: 55px 7%;
+  background: #ffffff;
+}
+
+.announcements-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.announcements-heading {
+  max-width: 620px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.announcements-heading > span {
+  color: #b58a2a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.announcements-heading h2 {
+  color: #061b3b;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(26px, 4vw, 36px);
+  margin: 10px 0;
+}
+
+.announcements-heading p {
+  color: #68758a;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.announcements-divider {
+  width: 50px;
+  height: 3px;
+  margin: 16px auto 0;
+  background: #d6ad52;
+  border-radius: 5px;
+}
+
+/* Three cards in one horizontal row */
+.announcements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.announcement-card {
+  min-width: 0;
+  padding: 12px;
+  background: #f7f8fb;
+  border: 1px solid #e8ebf0;
+  border-left: 3px solid #d6ad52;
+  border-radius: 9px;
+  box-shadow: 0 4px 12px rgba(6, 27, 59, 0.05);
+}
+
+.announcement-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b58a2a;
+  margin-bottom: 10px;
+}
+
+.announcement-category {
+  padding: 4px 7px;
+  color: #9b7625;
+  background: #fbf1d9;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.announcement-card h3 {
+  color: #061b3b;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 9px;
+}
+
+.announcement-details {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 9px;
+}
+
+.announcement-details div {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  color: #68758a;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.announcement-details svg {
+  flex-shrink: 0;
+  color: #b58a2a;
+  margin-top: 1px;
+}
+
+.announcement-card > p {
+  color: #68758a;
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 0 0 9px;
+}
+
+.announcement-reminder {
+  display: block;
+  padding-top: 8px;
+  border-top: 1px solid #e1e6ed;
+  color: #061b3b;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 750px) {
+  .announcements-section {
+    padding: 45px 6%;
+  }
+
+  .announcements-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .announcements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .announcement-card {
+    padding: 14px;
+  }
+}

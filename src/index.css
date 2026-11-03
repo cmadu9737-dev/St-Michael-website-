@@ -1,0 +1,25 @@
+/* PREVENT HORIZONTAL SCROLLING */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: auto;
+}
+
+/* Keep media within the screen */
+img,
+video,
+iframe {
+  max-width: 100%;
+}
